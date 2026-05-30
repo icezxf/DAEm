@@ -35,12 +35,12 @@ jobs:
         #CONFIG: [IPQ807X-NOWIFI, IPQ807X-WIFI,IPQ60XX-NOWIFI, IPQ60XX-WIFI]
         CONFIG: [IPQ60XX-WIFI]
 #LiBwrt        
-        SOURCE: [LiBwrt/openwrt-6.x]
-        BRANCH: [main-nss]
+        #SOURCE: [LiBwrt/openwrt-6.x]
+        #BRANCH: [main-nss]
 
 #immortalwrt
-        #SOURCE: [VIKINGYFY/immortalwrt]
-        #BRANCH: [main]        
+        SOURCE: [VIKINGYFY/immortalwrt]
+        BRANCH: [main]        
 
     #调用公用编译核心WRT-CORE.yml
     uses: ./.github/workflows/WRT-CORE.yml
@@ -54,9 +54,9 @@ jobs:
       #默认WIFI名称
       WRT_SSID: NERCH_Plus
       #默认WIFI密码
-      WRT_WORD: 8765432101
+      WRT_WORD: gpsgpsgp
       #默认地址
-      WRT_IP: 10.0.0.1
+      WRT_IP: 192.168.1.3
       #默认密码，仅作提示，修改无用
       WRT_PW: 无
       #源码链接
